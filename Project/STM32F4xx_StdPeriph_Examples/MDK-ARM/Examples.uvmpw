@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<ProjectWorkspace xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="project_mpw.xsd">
+
+  <SchemaVersion>1.0</SchemaVersion>
+
+  <Header>### uVision Project, (C) Keil Software</Header>
+
+  <WorkspaceName>WorkSpace</WorkspaceName>
+
+  <project>
+    <PathAndName>..\ADC\ADC3_DMA\MDK-ARM\ADC3_DMA.uvproj</PathAndName>
+    <NodeIsActive>1</NodeIsActive>
+    <NodeIsExpanded>1</NodeIsExpanded>
+  </project>
+
+  <project>
+    <PathAndName>..\ADC\DualADC_Interleaved_DMAmode3\MDK-ARM\DualADC_Interleaved_DMAmode3.uvproj</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>..\ADC\DualADC_RegulSimu_DMAmode1\MDK-ARM\DualADC_RegulSimu_DMAmode1.uvproj</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>..\ADC\TripleADC_Interleaved_DMAmode2\MDK-ARM\TripleADC_Interleaved_DMAmode2.uvproj</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>..\ADC\VBAT_Measurement\MDK-ARM\VBAT_Measurement.uvproj</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>..\CAN\LoopBack\MDK-ARM\CAN_LoopBack.uvproj</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>..\CAN\Networking\MDK-ARM\CAN_Networking.uvproj</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>..\CortexM\BitBand\MDK-ARM\BitBand.uvproj</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>..\CortexM\Mode_Privilege\MDK-ARM\Mode_Privilege.uvproj</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>..\CortexM\MPU\MDK-ARM\MPU.uvproj</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>..\CRC\CRC_Example\MDK-ARM\CRC_Example.uvproj</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>..\CRYP\AES_ECBmode_DMA\MDK-ARM\AES_ECBmode_DMA.uvproj</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>..\CRYP\AES_modes\MDK-ARM\AES_modes.uvproj</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>..\CRYP\DES_TDES_modes\MDK-ARM\DES_TDES_modes.uvproj</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>..\CRYP\TDES_ECBmode_DMA\MDK-ARM\TDES_ECBmode_DMA.uvproj</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>..\DAC\DAC_SignalsGeneration\MDK-ARM\DAC_SignalsGeneration.uvproj</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>..\DCMI\Camera\MDK-ARM\Camera.uvproj</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>..\DMA\FLASH_RAM\MDK-ARM\FLASH_RAM.uvproj</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>..\FSMC\SRAM\MDK-ARM\SRAM.uvproj</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>..\FSMC\SRAM_DataMemory\MDK-ARM\SRAM_DataMemory.uvproj</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>..\GPIO\IOToggle\MDK-ARM\IOToggle.uvproj</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>..\GPIO\JTAG_Remap\MDK-ARM\JTAG_Remap.uvproj</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>..\HASH\Context_Swap\MDK-ARM\Context_Swap.uvproj</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>..\HASH\HASH_SHA1_MD5\MDK-ARM\HASH_SHA1_MD5.uvproj</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>..\HASH\HMAC_SHA1_MD5\MDK-ARM\HMAC_SHA1_MD5.uvproj</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>..\HASH\SHA1_MD5_DMA\MDK-ARM\SHA1_MD5_DMA.uvproj</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>..\IWDG\IWDG_Example\MDK-ARM\IWDG_Example.uvproj</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>..\Lib_DEBUG\Lib_DEBUG_Example\MDK-ARM\Lib_DEBUG_Example.uvproj</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>..\NVIC\DMA_WFIMode\MDK-ARM\DMA_WFIMode.uvproj</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>..\NVIC\VectorTable_Relocation\MDK-ARM\VectorTable_Relocation.uvproj</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>..\PWR\BOR\MDK-ARM\BOR.uvproj</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>..\PWR\CurrentConsumption\MDK-ARM\CurrentConsumption.uvproj</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>..\PWR\PVD\MDK-ARM\PVD.uvproj</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>..\PWR\STANDBY\MDK-ARM\STANDBY.uvproj</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>..\PWR\STOP\MDK-ARM\STOP.uvproj</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>..\SPI\SPI_FLASH\MDK-ARM\SPI_FLASH.uvproj</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>..\SPI\SPI_TwoBoards\MDK-ARM\SPI_TwoBoards.uvproj</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>..\SysTick\SysTick_Example\MDK-ARM\SysTick_Example.uvproj</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>..\TIM\6Steps\MDK-ARM\6Steps.uvproj</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>..\TIM\7PWM_Output\MDK-ARM\7PWM_Output.uvproj</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>..\TIM\Cascade_Synchro\MDK-ARM\Cascade_Synchro.uvproj</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>..\TIM\ComplementarySignals\MDK-ARM\ComplementarySignals.uvproj</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>..\TIM\DMA\MDK-ARM\DMA.uvproj</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>..\TIM\DMABurst\MDK-ARM\DMABurst.uvproj</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>..\TIM\ExtTrigger_Synchro\MDK-ARM\ExtTrigger_Synchro.uvproj</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>..\TIM\InputCapture\MDK-ARM\InputCapture.uvproj</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>..\TIM\OCActive\MDK-ARM\OCActive.uvproj</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>..\TIM\OCInactive\MDK-ARM\OCInactive.uvproj</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>..\TIM\OCToggle\MDK-ARM\OCToggle.uvproj</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>..\TIM\OnePulse\MDK-ARM\OnePulse.uvproj</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>..\TIM\Parallel_Synchro\MDK-ARM\Parallel_Synchro.uvproj</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>..\TIM\PWM_Input\MDK-ARM\PWM_Input.uvproj</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>..\TIM\PWM_Output\MDK-ARM\PWM_Output.uvproj</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>..\TIM\TIM1_Synchro\MDK-ARM\TIM1_Synchro.uvproj</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>..\TIM\TIM9_OCToggle\MDK-ARM\TIM9_OCToggle.uvproj</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>..\TIM\TIM10_PWMOutput\MDK-ARM\TIM10_PWMOutput.uvproj</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>..\TIM\TimeBase\MDK-ARM\TimeBase.uvproj</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>..\USART\HyperTerminal_Interrupt\MDK-ARM\HyperTerminal_Interrupt.uvproj</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>..\USART\SmartCard\MDK-ARM\SmartCard.uvproj</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>..\USART\USART_Printf\MDK-ARM\USART_Printf.uvproj</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>..\USART\USART_TwoBoards\DataExchangeDMA\MDK-ARM\USART_TwoBoards_DataExchangeDMA.uvproj</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>..\USART\USART_TwoBoards\DataExchangeInterrupt\MDK-ARM\USART_TwoBoards_DataExchangeInterrupt.uvproj</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>..\WWDG\WWDG_Example\MDK-ARM\WWDG_Example.uvproj</PathAndName>
+  </project>
+
+</ProjectWorkspace>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<ProjectGui xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="project_gui.xsd">
+
+  <SchemaVersion>-2.1</SchemaVersion>
+
+  <Header>### uVision Project, (C) Keil Software</Header>
+
+  <ViewPool/>
+
+  <SECTreeCtrl>
+    <View>
+      <WinId>38003</WinId>
+      <ViewName>Registers</ViewName>
+      <TableColWidths>115 135</TableColWidths>
+    </View>
+    <View>
+      <WinId>346</WinId>
+      <ViewName>Code Coverage</ViewName>
+      <TableColWidths>698 160</TableColWidths>
+    </View>
+    <View>
+      <WinId>204</WinId>
+      <ViewName>Performance Analyzer</ViewName>
+      <TableColWidths>858</TableColWidths>
+    </View>
+  </SECTreeCtrl>
+
+  <TreeListPane>
+    <View>
+      <WinId>1506</WinId>
+      <ViewName>Symbols</ViewName>
+      <UserString></UserString>
+      <TableColWidths>133 133 133</TableColWidths>
+    </View>
+    <View>
+      <WinId>1936</WinId>
+      <ViewName>Watch 1</ViewName>
+      <UserString></UserString>
+      <TableColWidths>133 133 133</TableColWidths>
+    </View>
+    <View>
+      <WinId>1937</WinId>
+      <ViewName>Watch 2</ViewName>
+      <UserString></UserString>
+      <TableColWidths>133 133 133</TableColWidths>
+    </View>
+    <View>
+      <WinId>1935</WinId>
+      <ViewName>Call Stack + Locals</ViewName>
+      <UserString></UserString>
+      <TableColWidths>133 133 133</TableColWidths>
+    </View>
+    <View>
+      <WinId>2506</WinId>
+      <ViewName>Trace Data</ViewName>
+      <UserString></UserString>
+      <TableColWidths>75 135 130 95 70 230 200</TableColWidths>
+    </View>
+  </TreeListPane>
+
+  <WindowSettings>
+    <LogicAnalizer>
+      <ShowLACursor>1</ShowLACursor>
+      <ShowSignalInfo>1</ShowSignalInfo>
+      <ShowCycles>0</ShowCycles>
+    </LogicAnalizer>
+  </WindowSettings>
+
+  <WinLayoutEx>
+    <sActiveDebugView></sActiveDebugView>
+    <WindowPosition>
+      <length>44</length>
+      <flags>2</flags>
+      <showCmd>3</showCmd>
+      <MinPosition>
+        <xPos>-1</xPos>
+        <yPos>-1</yPos>
+      </MinPosition>
+      <MaxPosition>
+        <xPos>-1</xPos>
+        <yPos>-1</yPos>
+      </MaxPosition>
+      <NormalPosition>
+        <Top>70</Top>
+        <Left>511</Left>
+        <Right>1336</Right>
+        <Bottom>740</Bottom>
+      </NormalPosition>
+    </WindowPosition>
+    <MDIClientArea>
+      <RegID>0</RegID>
+      <MDITabState>
+        <Len>1107</Len>
+        <Data>01000000040000000100000001000000010000000100000000000000020000000000000001000000010000000000000028000000280000000100000007000000060000000100000078593A5C434F44455C53544D3332463458585F4453505F5354445045524950485F4C49425F56312E302E305C50524F4A4543545C53544D3332463458585F5354445045524950485F4558414D504C45535C4441435C4441435F5349474E414C5347454E45524154494F4E5C73746D3332663478785F69742E63000000000E73746D3332663478785F69742E6300000000C5D4F200FFFFFFFF70593A5C434F44455C53544D3332463458585F4453505F5354445045524950485F4C49425F56312E302E305C50524F4A4543545C53544D3332463458585F5354445045524950485F4558414D504C45535C4441435C4441435F5349474E414C5347454E45524154494F4E5C6D61696E2E6300000000066D61696E2E6300000000FFDC7800FFFFFFFF61593A5C434F44455C53544D3332463458585F4453505F5354445045524950485F4C49425F56312E302E305C5554494C49544945535C53544D33325F4556414C5C53544D333234305F34315F475F4556414C5C73746D33323478675F6576616C2E68000000000F73746D33323478675F6576616C2E6800000000BECEA100FFFFFFFF62593A5C434F44455C53544D3332463458585F4453505F5354445045524950485F4C49425F56312E302E305C50524F4A4543545C53544D3332463458585F5354445045524950485F4558414D504C45535C44434D495C43414D4552415C6D61696E2E6300000000066D61696E2E6300000000F0A0A100FFFFFFFF65593A5C434F44455C53544D3332463458585F4453505F5354445045524950485F4C49425F56312E302E305C5554494C49544945535C53544D33325F4556414C5C53544D333234305F34315F475F4556414C5C73746D33323478675F6576616C5F6C63642E63000000001373746D33323478675F6576616C5F6C63642E6300000000BCA8E100FFFFFFFF61593A5C434F44455C53544D3332463458585F4453505F5354445045524950485F4C49425F56312E302E305C5554494C49544945535C53544D33325F4556414C5C53544D333234305F34315F475F4556414C5C73746D33323478675F6576616C2E63000000000F73746D33323478675F6576616C2E63000000009CC1B600FFFFFFFF62593A5C434F44455C53544D3332463458585F4453505F5354445045524950485F4C49425F56312E302E305C4C49425241524945535C434D5349535C4445564943455C53545C53544D3332463458585C494E434C5544455C73746D3332663478782E68000000000B73746D3332663478782E6800000000F7B88600FFFFFFFF0100000010000000C5D4F200FFDC7800BECEA100F0A0A100BCA8E1009CC1B600F7B88600D9ADC200A5C2D700B3A6BE00EAD6A300F6FA7D00B5E99D005FC3CF00C1838300CACAD500010000000000000002000000080100005E0000005605000089010000</Data>
+      </MDITabState>
+    </MDIClientArea>
+  </WinLayoutEx>
+
+  <AlienFiles>
+    <Doc>
+      <Name></Name>
+      <ColumnNumber>0</ColumnNumber>
+      <TopLine>0</TopLine>
+      <CurrentLine>0</CurrentLine>
+    </Doc>
+  </AlienFiles>
+
+  <MDIGroups>
+    <Orientation>1</Orientation>
+    <ActiveMDIGroup>0</ActiveMDIGroup>
+    <MDIGroup>
+      <Size>100</Size>
+      <ActiveTab>6</ActiveTab>
+      <Doc>
+        <Name>Y:\CODE\STM32F4XX_DSP_STDPERIPH_LIB_V1.0.0\PROJECT\STM32F4XX_STDPERIPH_EXAMPLES\DAC\DAC_SIGNALSGENERATION\stm32f4xx_it.c</Name>
+        <ColumnNumber>14</ColumnNumber>
+        <TopLine>170</TopLine>
+        <CurrentLine>177</CurrentLine>
+      </Doc>
+      <Doc>
+        <Name>Y:\CODE\STM32F4XX_DSP_STDPERIPH_LIB_V1.0.0\PROJECT\STM32F4XX_STDPERIPH_EXAMPLES\DAC\DAC_SIGNALSGENERATION\main.c</Name>
+        <ColumnNumber>31</ColumnNumber>
+        <TopLine>89</TopLine>
+        <CurrentLine>96</CurrentLine>
+      </Doc>
+      <Doc>
+        <Name>Y:\CODE\STM32F4XX_DSP_STDPERIPH_LIB_V1.0.0\UTILITIES\STM32_EVAL\STM3240_41_G_EVAL\stm324xg_eval.h</Name>
+        <ColumnNumber>55</ColumnNumber>
+        <TopLine>147</TopLine>
+        <CurrentLine>158</CurrentLine>
+      </Doc>
+      <Doc>
+        <Name>Y:\CODE\STM32F4XX_DSP_STDPERIPH_LIB_V1.0.0\PROJECT\STM32F4XX_STDPERIPH_EXAMPLES\DCMI\CAMERA\main.c</Name>
+        <ColumnNumber>19</ColumnNumber>
+        <TopLine>80</TopLine>
+        <CurrentLine>87</CurrentLine>
+      </Doc>
+      <Doc>
+        <Name>..\..\..\..\..\Utilities\STM32_EVAL\STM3240_41_G_EVAL\stm324xg_eval_lcd.c</Name>
+        <ColumnNumber>14</ColumnNumber>
+        <TopLine>85</TopLine>
+        <CurrentLine>94</CurrentLine>
+      </Doc>
+      <Doc>
+        <Name>..\..\..\..\..\Utilities\STM32_EVAL\STM3240_41_G_EVAL\stm324xg_eval.c</Name>
+        <ColumnNumber>62</ColumnNumber>
+        <TopLine>106</TopLine>
+        <CurrentLine>106</CurrentLine>
+      </Doc>
+      <Doc>
+        <Name>Y:\CODE\STM32F4XX_DSP_STDPERIPH_LIB_V1.0.0\LIBRARIES\CMSIS\DEVICE\ST\STM32F4XX\INCLUDE\stm32f4xx.h</Name>
+        <ColumnNumber>73</ColumnNumber>
+        <TopLine>207</TopLine>
+        <CurrentLine>214</CurrentLine>
+      </Doc>
+    </MDIGroup>
+  </MDIGroups>
+
+</ProjectGui>
