@@ -551,6 +551,55 @@ void LCD_DisplayChar(uint16_t Line, uint16_t Column, uint8_t Ascii)
   LCD_DrawChar(Column, Line, &LCD_Currentfonts->table[Ascii * LCD_Currentfonts->Height]);
 }
 
+
+//取得汉字字模所在位置
+static unsigned short GetHanziPos(const char *hz)
+{
+    int i;
+    for (i = 0; i < sizeof(hzIndex)/sizeof(hzIndex[0]); i += 2)
+    {
+        if (hzIndex[i] == (unsigned char)hz[0] && hzIndex[i + 1] == (unsigned char)hz[1])
+        {
+            return (i >> 1);   //就是除以2
+        }
+    }
+    return 0xffff;
+}
+
+//显示汉字
+void LCD_DisplayHanzi(uint16_t Xpos, uint16_t Ypos, const char *hz)
+{
+    int i;
+    unsigned char *p;
+    unsigned short index;
+    
+    index = GetHanziPos(hz);
+    if (index == 0xffff) return;
+    
+    p = hzfont + index * 32;
+    
+    LCD_SetDisplayWindow(Xpos, Ypos, 16, 16);
+    for(index = 0; index < 16; index++)
+    {
+        LCD_WriteRAM_Prepare(); /* Prepare to write GRAM */
+        for(i = 0; i < 16; i++)
+        {
+            if (i == 8) p++;
+            if ((*p & (0x80 >> (i % 8))) == 0x00)
+            {
+                LCD_WriteRAM(BackColor);
+            }
+            else
+            {
+                LCD_WriteRAM(TextColor);
+            }
+        }
+        p++;
+        Ypos++;
+        LCD_SetCursor(Xpos, Ypos);
+    }
+}
+
 /**
   * @brief  Displays a maximum of 20 char on the LCD.
   * @param  Line: the Line where to display the character shape .
@@ -654,10 +703,14 @@ void LCD_DrawLine(uint16_t Xpos, uint16_t Ypos, uint16_t Length, uint8_t Directi
   LCD_SetCursor(Xpos, Ypos);
   if(Direction == LCD_DIR_HORIZONTAL)
   {
-    LCD_WriteRAM_Prepare(); /* Prepare to write GRAM */
     for(i = 0; i < Length; i++)
     {
+      LCD_WriteRAM_Prepare(); /* Prepare to write GRAM */
       LCD_WriteRAM(TextColor);
+      if (LANDSCAPE) Xpos++;
+      else Ypos++;
+      //Xpos++;
+      LCD_SetCursor(Xpos, Ypos);
     }
   }
   else
@@ -666,7 +719,9 @@ void LCD_DrawLine(uint16_t Xpos, uint16_t Ypos, uint16_t Length, uint8_t Directi
     {
       LCD_WriteRAM_Prepare(); /* Prepare to write GRAM */
       LCD_WriteRAM(TextColor);
-      Xpos++;
+      if (LANDSCAPE) Ypos++;
+      else Xpos++;
+      //Xpos++;
       LCD_SetCursor(Xpos, Ypos);
     }
   }
@@ -867,30 +922,20 @@ void LCD_DrawFullRect(uint16_t Xpos, uint16_t Ypos, uint16_t Width, uint16_t Hei
   */
 void LCD_DrawFullCircle(uint16_t Xpos, uint16_t Ypos, uint16_t Radius)
 {
-  int32_t  D;    /* Decision Variable */
+  int32_t  D;/* Decision Variable */
   uint32_t  CurX;/* Current X Value */
   uint32_t  CurY;/* Current Y Value */
 
   D = 3 - (Radius << 1);
-
   CurX = 0;
   CurY = Radius;
 
-  LCD_SetTextColor(BackColor);
-
   while (CurX <= CurY)
   {
-    if(CurY > 0)
-    {
-      LCD_DrawLine(Xpos - CurX, Ypos + CurY, 2*CurY, LCD_DIR_HORIZONTAL);
-      LCD_DrawLine(Xpos + CurX, Ypos + CurY, 2*CurY, LCD_DIR_HORIZONTAL);
-    }
-
-    if(CurX > 0)
-    {
-      LCD_DrawLine(Xpos - CurY, Ypos + CurX, 2*CurX, LCD_DIR_HORIZONTAL);
-      LCD_DrawLine(Xpos + CurY, Ypos + CurX, 2*CurX, LCD_DIR_HORIZONTAL);
-    }
+    LCD_DrawLine(Xpos - CurX, Ypos - CurY, CurY * 2, LCD_DIR_VERTICAL);
+    LCD_DrawLine(Xpos + CurX, Ypos - CurY, CurY * 2, LCD_DIR_VERTICAL);
+    LCD_DrawLine(Xpos - CurY, Ypos + CurX, CurY * 2, LCD_DIR_HORIZONTAL);
+    LCD_DrawLine(Xpos - CurY, Ypos - CurX, CurY * 2, LCD_DIR_HORIZONTAL);
     if (D < 0)
     {
       D += (CurX << 2) + 6;
@@ -902,9 +947,6 @@ void LCD_DrawFullCircle(uint16_t Xpos, uint16_t Ypos, uint16_t Radius)
     }
     CurX++;
   }
-
-  LCD_SetTextColor(TextColor);
-  LCD_DrawCircle(Xpos, Ypos, Radius);
 }
 
 /**

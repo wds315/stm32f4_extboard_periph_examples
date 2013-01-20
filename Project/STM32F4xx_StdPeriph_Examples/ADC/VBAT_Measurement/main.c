@@ -200,6 +200,9 @@ void Display_Init(void)
 
   /* Set the LCD Back Color and Text Color*/
   LCD_SetBackColor(Blue);
+    LCD_SetTextColor(Red);
+    LCD_DrawCircle(50, 200, 20);
+    LCD_DrawFullCircle(250, 200, 20);
   LCD_SetTextColor(White);
 
   LCD_DisplayStringLine(LINE(0x13), " STM32F4xx ADC1 VBAT Measurement example");
@@ -207,7 +210,11 @@ void Display_Init(void)
   /* Set the LCD Text size */
   LCD_SetFont(&Font16x24);
 
-  LCD_DisplayStringLine(LINE(0), "**VBAT Measurement**");
+  //LCD_DisplayStringLine(LINE(0), "**VBAT Measurement**");
+  LCD_DisplayHanzi(0, 0, "ºº");
+  LCD_DisplayHanzi(16, 0, "×Ö");
+  LCD_DisplayHanzi(32, 0, "²â");
+  LCD_DisplayHanzi(48, 0, "ÊÔ");
 
   /* Set the LCD Back Color and Text Color*/
   LCD_SetBackColor(White);
