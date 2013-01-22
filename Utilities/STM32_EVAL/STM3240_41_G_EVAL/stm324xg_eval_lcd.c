@@ -1501,10 +1501,11 @@ void NormalLCD(void)
 	}
 	else
 	{
+		LCD_WriteReg(0x0001, 0x0100);
 #if (LANDSCAPE == 1)
-    	LCD_WriteReg(0x03, 0x1038);
+//    	LCD_WriteReg(0x03, 0x1038);
 #else
-    	LCD_WriteReg(0x03, 0x1030);
+//    	LCD_WriteReg(0x03, 0x1030);
 #endif
 	}
 }
