@@ -75,6 +75,10 @@ void ADC_Config(void);
 /* Private functions ---------------------------------------------------------*/
 uint32_t GetSector(uint32_t Address);
 
+extern volatile unsigned long frame_count;
+extern volatile unsigned long frame_time;
+extern volatile unsigned long fps;
+
 /**
   * @brief  Main program.
   * @param  None
@@ -199,6 +203,8 @@ int main(void)
   Delay(200); 
 
   DCMI_CaptureCmd(ENABLE); 
+	frame_time = 0;
+	frame_count = 0;
 
   while(1)
   {

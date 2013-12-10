@@ -42,6 +42,11 @@ extern __IO uint32_t PressedKey;
 
 extern ImageFormat_TypeDef ImageFormat;
 
+
+volatile unsigned long frame_count = 0;
+volatile unsigned long frame_time = 0;
+volatile unsigned long fps = 0;
+
 /* Private function prototypes -----------------------------------------------*/
 /* Private functions ---------------------------------------------------------*/
 
@@ -144,6 +149,8 @@ void PendSV_Handler(void)
   */
 void SysTick_Handler(void)
 {
+	//100us产生一次。
+	frame_time++;
 	TimingDelay_Decrement();
 }
 
@@ -184,7 +191,21 @@ void DCMI_IRQHandler(void)
 	}
 	if (DCMI->RISR & DCMI_IT_FRAME)
 	{
+		//防止出现跑偏的现象,可以设置断点看看帧率。
+		//这里面设断点会导致程序死循环delay中。
+		frame_count++;
 		DCMI->ICR = DCMI_IT_FRAME;
+		DMA_Cmd(DMA2_Stream1, DISABLE);
+		if (frame_time > 1000)
+		{
+			//10秒钟统计一次
+			fps = frame_count * 100 / frame_time;
+			frame_count = 0;
+			frame_time = 0;
+		}
+		LCD_SetCursor(0, 0);
+		LCD_WriteRAM_Prepare();
+		DMA_Cmd(DMA2_Stream1, ENABLE);
 	}
 }
 
